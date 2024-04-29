@@ -1,0 +1,127 @@
+/**{
+    margin: 0;
+    padding: 0;
+}
+porque se eu usar isso aqui o formulário fica estranho? */
+
+/*todo o corpo da página*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    font-size: 12px;
+}
+
+/*caixa externa do formulário escura*/
+.box{
+    color: white;
+    position: absolute; /*para ocupar apenas o espaço dela mesmo e não da página inteira*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px; /*espaço entre o elemento e a borda*/
+    border-radius: 15px;
+    width: 20%;
+    height: 650px;
+}
+
+/*contorno dentro do formulário na cor azul*/
+fieldset{
+    border: 3px solid dodgerblue; /*linha contorno do*/
+    border-radius: 5px;
+    height: 630px;
+    
+}
+
+
+legend{
+    border: 1px solid dodgerblue; /*linha em volta da borda superior*/
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(0,92,197); /*cor de dentro da legenda*/
+    border-radius: 8px;
+}
+
+.inputBox{
+    position: relative;
+    margin-top: 15px;
+    
+}
+
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none; /*qdo clica no quadradinho aparece a linha se não colocar none*/ 
+    color: white;
+    font-size: 15px;
+    width: 100%; /* para o input ocupar 100% da parte e o texto vai para baixo*/
+    letter-spacing: 2px; /*espaço entre cada caracter no digitado pelo usuario */
+}
+
+.labelInput{
+    position: absolute; /*importante para fazer a parte da animação*/
+    top: 0px;
+    left: 0px;
+    pointer-events: none; /*qq lugar que clicar dentro do input vai executar a ação qdo se tem NONE*/
+    transition: 0.5s;
+
+}
+
+.inputUser:focus ~.labelInput,.inputUser:valid ~.labelInput{
+    top: -20px;
+    font-size: 10px;
+    color: dodgerblue;
+}
+
+
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 13px;
+}
+
+
+#submit{
+    background-image: linear-gradient(to right, rgb(0,92,197), rgb(90,20,220));
+    width: 50%; /*para ocupar o espaço todo da tela*/
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    height: 35px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; /*para que serve*/
+    
+}
+
+#submit:hover{ /*qdo passar o mouse por cima do botão ter efeito mais escuro*/
+    background-image: linear-gradient(to right, rgb(0,80,172), rgb(80,19,195));
+}
+
+#pesquisar{
+    background-image: linear-gradient(to right, rgb(0,92,197), rgb(90,20,220));
+    width: auto; /* Defina a largura conforme necessário */
+    border: none;
+    padding: 6px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    height: 30px;
+    margin-right: 13px;
+    position: fixed; /* Alterado para 'fixed' para posicionamento em relação à janela */
+    top: 57px; /* Ajuste conforme necessário */ 
+    right: 13px; /* Ajuste conforme necessário */
+}
+
+
+
+

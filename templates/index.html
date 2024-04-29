@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/carregacep.js" defer type="module"></script>
+    <title>cadastro_professor</title>
+</head>
+<body>
+  
+        
+        <div class="box">
+            <form action="/" method="POST">
+                <fieldset>
+                    <legend><b>Cadastro do Professor</b></legend>
+
+
+            
+            <div class="inputBox">
+                
+                <input type="text" name="cep" id="input-cep" class="inputUser" required>
+                <label for="cep" class="labelInput">CEP:</label>
+                
+            </div>
+                <input type="button" name="btnpesquisar" value="Consultar" id="pesquisar">
+
+       
+
+            <div class="inputBox">
+                <input type="text" name="endereco" id="logradouro" class="inputUser" required>
+                <label for="endereco" class="labelInput">Endereco</label>
+            </div>
+
+
+            <div class="inputBox">
+                <input type="number" name="numero" id="numero" class="inputUser" required>
+                <label for="num" class="labelInput">Nº</label>
+            </div>
+
+           
+
+            <div class="inputBox">
+                <input type="text" name="complemento" id="complemento" class="inputUser" required>
+                <label for="compl" class="labelInput">Complemento</label>
+            </div>
+
+
+            <div class="inputBox">
+                <input type="text" name="bairro" id="bairro" class="inputUser" required>
+                <label for="bairro" class="labelInput">Bairro</label>
+            </div>
+
+
+            <div class="inputBox">
+                <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                <label for="cidade" class="labelInput">Cidade</label>
+            </div>
+
+                            
+            <div class="inputBox">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                <label for="nome" class="labelInput">Nome completo</label>
+            </div>
+
+                    
+
+            <div class="inputBox">
+                <input type="tel" name="telefone" id="tel" class="inputUser" required>
+                <label for="tel" class="labelInput">Telefone</label>
+            </div>
+
+
+            <div class="inputBox">
+                <input type="email" name="email" id="email" class="inputUser" required>
+                <label for="email" class="labelInput">Email</label>
+            </div>
+
+            <br>
+            
+
+            <p>Sexo:</p>
+
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+
+                <br>
+
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+
+                
+
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Outro</label>
+
+                <br><br><br>
+                
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+
+                <br><br>
+
+                <p>Área de atuação:</p>
+
+                <input type="radio" id="fundI" name="area_atuacao" value="fundI">
+                <label for="fundI">Fund I</label>
+
+                <input type="radio" id="fundII" name="area_atuacao" value="fundII">
+                <label for="fundII">Fund II</label>
+
+                <input type="radio" id="medio" name="area_atuacao" value="medio">
+                <label for="medio">Ensino Médio</label>
+
+                <br><br><br>
+
+
+               
+                <input type="submit" name="submit" id="submit">
+                </fieldset>
+            </form>
+
+
+        </div>
+
+   
+    
+</body>
+</html>
